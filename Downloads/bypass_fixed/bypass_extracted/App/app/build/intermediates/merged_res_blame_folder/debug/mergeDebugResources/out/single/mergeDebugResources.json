@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/layout_fragment_temp_threshold.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/layout/fragment_temp_threshold.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_circle_indicator.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/circle_indicator.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_ic_battery_bypass.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/ic_battery_bypass.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_status_card_bg.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/status_card_bg.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_ic_qs_bypass.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/ic_qs_bypass.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_ic_thermometer.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/ic_thermometer.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/drawable_ic_power.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/drawable/ic_power.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/layout_activity_main.xml.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-debug-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.youcefm.bypassctrl.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+    }
+]

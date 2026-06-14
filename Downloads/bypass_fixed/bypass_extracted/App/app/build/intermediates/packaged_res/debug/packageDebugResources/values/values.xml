@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bypass_active">#FF6B6B</color>
+    <color name="charge_active">#4CD9A6</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="indicator_battery">#4CD9A6</color>
+    <color name="indicator_cc">#B0BEC5</color>
+    <color name="indicator_current">#4FC3F7</color>
+    <color name="indicator_power">#CE93D8</color>
+    <color name="indicator_status">#64B5F6</color>
+    <color name="indicator_temp">#FFB74D</color>
+    <color name="indicator_voltage">#FFF176</color>
+    <color name="md_theme_background">#191C1A</color>
+    <color name="md_theme_onBackground">#E1E3DF</color>
+    <color name="md_theme_onPrimary">#003828</color>
+    <color name="md_theme_onPrimaryContainer">#6FF6C1</color>
+    <color name="md_theme_onSecondary">#1F352A</color>
+    <color name="md_theme_onSurface">#E1E3DF</color>
+    <color name="md_theme_onSurfaceVariant">#BFC9C2</color>
+    <color name="md_theme_primary">#4CD9A6</color>
+    <color name="md_theme_primaryContainer">#00523B</color>
+    <color name="md_theme_secondary">#B3CCBC</color>
+    <color name="md_theme_surface">#191C1A</color>
+    <color name="md_theme_surfaceVariant">#404944</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="temp_cool">#4CD9A6</color>
+    <color name="temp_hot">#F44336</color>
+    <color name="temp_mild">#FFD54F</color>
+    <color name="temp_warm">#FF9800</color>
+    <string name="app_name">Blitz Bypass</string>
+    <style name="Theme.BlitzBypass" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</item>
+    </style>
+</resources>

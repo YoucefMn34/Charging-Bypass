@@ -1,0 +1,108 @@
+#!/system/bin/sh
+# ============================================================
+# Blitz Bypass CLI
+# ============================================================
+
+BYPASS_DIR="/data/bypass"
+STATE_FILE="$BYPASS_DIR/state"
+CONFIG_FILE="$BYPASS_DIR/config"
+TEMP_CONFIG_FILE="$BYPASS_DIR/temp_config"
+LOG_FILE="$BYPASS_DIR/daemon.log"
+AUTO_BYPASS_MARKER="$BYPASS_DIR/auto_bypass"
+CC_NODE="/sys/class/power_supply/battery/constant_charge_current"
+
+show_help() {
+    cat << EOF
+Blitz Bypass CLI
+
+Usage: bypass [OPTION]
+
+Options:
+  -b, --bypass          Enable bypass charging
+  -c, --charge          Enable normal charging
+  -t, --toggle          Toggle between bypass/charge
+  -s, --status          Show current status
+  -l, --logs            Show last 50 daemon logs
+  --temp-config VALUE   Set temp config (format: enabled:trigger:resume)
+                        Example: bypass --temp-config 1:40:38
+  --percent-config VAL  Set percent config (format: enabled:threshold)
+                        Example: bypass --percent-config 1:80
+  -h, --help            Show this help
+
+EOF
+}
+
+show_status() {
+    local state=$(cat "$STATE_FILE" 2>/dev/null)
+    local config=$(cat "$CONFIG_FILE" 2>/dev/null)
+    local temp_config=$(cat "$TEMP_CONFIG_FILE" 2>/dev/null)
+    local temp=$(cat /sys/class/power_supply/battery/temp 2>/dev/null | awk '{print int($1/10)}')
+    local level=$(cat /sys/class/power_supply/battery/capacity 2>/dev/null)
+    local cc=$(cat "$CC_NODE" 2>/dev/null)
+    local manual="false"
+    [ "$state" = "bypass" ] && [ ! -f "$AUTO_BYPASS_MARKER" ] && manual="true"
+
+    echo "========================================"
+    echo "       Blitz Bypass Status"
+    echo "========================================"
+    echo "State:        $state"
+    echo "Manual:       $manual"
+    echo "Battery:      ${level}%"
+    echo "Temperature:  ${temp}°C"
+    echo "CC Value:     $cc"
+    echo ""
+    echo "Percent Config:  $config"
+    echo "Temp Config:     $temp_config"
+    echo "========================================"
+}
+
+case "$1" in
+    -b|--bypass)
+        echo "bypass" > "$STATE_FILE"
+        rm -f "$AUTO_BYPASS_MARKER"
+        echo "Bypass enabled (manual)"
+        ;;
+    -c|--charge)
+        echo "charge" > "$STATE_FILE"
+        rm -f "$AUTO_BYPASS_MARKER"
+        echo "Charging enabled"
+        ;;
+    -t|--toggle)
+        CURRENT=$(cat "$STATE_FILE" 2>/dev/null)
+        if [ "$CURRENT" = "bypass" ]; then
+            echo "charge" > "$STATE_FILE"
+            rm -f "$AUTO_BYPASS_MARKER"
+            echo "Switched to CHARGE"
+        else
+            echo "bypass" > "$STATE_FILE"
+            rm -f "$AUTO_BYPASS_MARKER"
+            echo "Switched to BYPASS (manual)"
+        fi
+        ;;
+    -s|--status)
+        show_status
+        ;;
+    -l|--logs)
+        echo "=== Last 50 log lines ==="
+        tail -n 50 "$LOG_FILE"
+        ;;
+    --temp-config)
+        if [ -z "$2" ]; then
+            echo "Error: Missing value. Format: enabled:trigger:resume (e.g., 1:40:38)"
+            exit 1
+        fi
+        echo "$2" > "$TEMP_CONFIG_FILE"
+        echo "Temp config set to: $2"
+        ;;
+    --percent-config)
+        if [ -z "$2" ]; then
+            echo "Error: Missing value. Format: enabled:threshold (e.g., 1:80)"
+            exit 1
+        fi
+        echo "$2" > "$CONFIG_FILE"
+        echo "Percent config set to: $2"
+        ;;
+    -h|--help|*)
+        show_help
+        ;;
+esac

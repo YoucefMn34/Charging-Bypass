@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+
+    <!-- Battery body outline -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M2,7v10c0,1.1 0.9,2 2,2h14c1.1,0 2,-0.9 2,-2V7c0,-1.1 -0.9,-2 -2,-2H4C2.9,5 2,5.9 2,7z" />
+
+    <!-- Battery positive terminal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,10h2v4h-2z" />
+
+    <!-- Bypass slash (diagonal line through battery) -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF6B6B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M4,19L20,5" />
+
+    <!-- Small lightning bolt inside (indicates power flow) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,8l-2,4h3l-1,4l4,-5h-3l2,-3z" />
+
+</vector>

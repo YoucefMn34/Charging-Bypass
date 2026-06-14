@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.youcefm.bypassctrl.app-mergeDebugResources-33:/layout/fragment_temp_threshold.xml",
+        "source": "com.youcefm.bypassctrl.app-main-36:/layout/fragment_temp_threshold.xml"
+    },
+    {
+        "merged": "com.youcefm.bypassctrl.app-mergeDebugResources-33:/layout/activity_main.xml",
+        "source": "com.youcefm.bypassctrl.app-main-36:/layout/activity_main.xml"
+    }
+]

@@ -1,0 +1,7 @@
+id=bypass-charging
+name=Bypass Charging - Poco X7 Pro
+version=1.0
+versionCode=1
+author=YoucefMn34
+description=Always-on daemon with 'bypass' CLI command. Usage: su -c 'bypass -b' (bypass), su -c 'bypass -c' (charge), su -c 'bypass -t' (toggle), su -c 'bypass -s' (status).
+updateJson=
